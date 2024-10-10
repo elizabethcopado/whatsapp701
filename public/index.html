@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="socket.io/socket.io.js"></script> <!-- Asegúrate de que la ruta sea correcta -->
+    <script src="chat.js" defer></script> <!-- Asegúrate de que la ruta sea correcta -->
+</head>
+<body>
+    <div id="panel-bienvenida">
+        <h2>BIENVENID@ A MI WHATSAPP</h2>
+        <input type="text" id="usuario" placeholder="Nombre de usuario">
+        <button onclick="ingresarAlChat()">Ingresar</button>
+    </div>
+
+    <div id="app-chat" style="display: none;">
+        <div id="output"></div>
+        <div id="escribiendo-mensaje"></div>
+        <input type="text" id="mensaje" placeholder="Escribe tu mensaje aquí...">
+        <button id="enviar">Enviar</button>
+    </div>
+
+</body>
+</html>
